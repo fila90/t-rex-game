@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Press Start 2P', cursive;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #111;
+}
+
+.canvas-wrap {
+  position: relative;
+  width: 720px;
+  height: 480px;
+}
+
+.score {
+  font-family: 'Press Start 2P';
+  position: absolute;
+  color: #000;
+  margin: 0;
+  padding: 10px;
+  z-index: 10;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+canvas#bg {
+  z-index: 0;
+  background: transparent url('../img/bg/bg.gif') no-repeat center;
+  background-size: cover;
+}
+
+canvas#game {
+  z-index: 1;
+}
+
+.ui {
+  font-family: 'Press Start 2P';
+  z-index: 2;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.ui button {
+  font-family: 'Press Start 2P';
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  background: transparent;
+  border: 5px solid #000;
+  outline: none;
+  font-size: 1.75em;
+  transition: transform 0.35s ease-out;
+  will-change: transform;
+}
+
+.ui button:hover {
+  transform: rotate3d(0, 0, 1, 10deg);
+  background: #fff;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}

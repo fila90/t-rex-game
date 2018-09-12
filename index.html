@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NGame</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+  <div class="canvas-wrap">
+    <h1 class="score" id="score"></h1>
+    <canvas id="bg" width="720" height="480"></canvas>
+    <canvas id="game" width="720" height="480"></canvas>
+    <div class="ui" id="ui">
+      <button type="button" id="play">PLAY</button>
+      <button type="button" id="score">SCORE</button>
+      <button type="button" id="character">CHARACTER</button>
+      <div class="modal" id="modal-score" hidden>
+        <ol id="list">
+        </ol>
+        <button type="button">X</button>
+      </div>
+      <div class="modal" id="modal-character" hidden>
+        <ul id="list">
+        </ul>
+        <button type="button">X</button>
+      </div>
+    </div>
+  </div>
+  <script src="/js/helper.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>
